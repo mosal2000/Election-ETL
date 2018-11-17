@@ -4,7 +4,6 @@ CREATE DATABASE election_2018_db;
 USE election_2018_db;
 
 CREATE TABLE house_candidate (
--- 	id INT PRIMARY KEY,
 	fec_candidate_id VARCHAR(20) primary key, 
 	name varchar(100),
 	party varchar(30), 
@@ -26,8 +25,7 @@ CREATE TABLE house_candidate (
 );
 
 CREATE TABLE senate_candidate (
-	id INT PRIMARY KEY,
-	fec_candidate_id varchar(20), 
+	fec_candidate_id VARCHAR(20) primary key, 
 	name varchar(100),
 	party varchar(30), 
 	status char(1),
@@ -46,4 +44,47 @@ CREATE TABLE senate_candidate (
 	crp_id varchar(20),
 	google_entity_id varchar(20)
 );
+
+CREATE TABLE candidate_finance (
+	fec_candidate_id VARCHAR(20) primary key,
+	cand_office char(1),
+	total_receipt float,
+	total_disbursement float,
+	cash_on_hand_cop float,
+	debt_owed_by_committee float,
+	coverage_end_date date,
+	individual_itemized_contribution float,
+	individual_unitemized_contribution float,
+	individual_contribution float,
+	other_committee_contribution float,
+	party_committee_contribution float,
+	cand_contribution float,
+	total_contribution float,
+	transfer_from_other_auth_committee float,
+	cand_loan float,
+	other_loan float,
+	total_loan float,
+	offsets_to_operating_expenditure float,
+	offsets_to_fundraising float,
+	offsets_to_leagal_accounting float,
+	other_receipts float,
+	operating_expenditure float,
+	exempt_legal_accounting_disbursement float,
+	fundraising_disbursement float,
+	transfer_to_other_auth_committee float,
+	cand_loan_repayment float,
+	other_loan_repayment float,
+	total_loan_repayment float,
+	individual_refund float,
+	party_committee_refund float,
+	other_committee_refund float,
+	total_contribution_refund float,
+	other_disbursements float,
+	net_contribution float,
+	net_operating_expenditure float,
+	cash_on_hand_bop float,
+	debt_owe_to_committee float,
+	coverage_start_date date
+);
+
 
