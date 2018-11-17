@@ -4,8 +4,8 @@ CREATE DATABASE election_2018_db;
 USE election_2018_db;
 
 CREATE TABLE house_candidate (
-	id INT PRIMARY KEY,
-	fec_candidate_id varchar(20), 
+-- 	id INT PRIMARY KEY,
+	fec_candidate_id VARCHAR(20) primary key, 
 	name varchar(100),
 	party varchar(30), 
 	status char(1),
