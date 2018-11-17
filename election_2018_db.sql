@@ -52,7 +52,6 @@ CREATE TABLE candidate_finance (
 	total_disbursement float,
 	cash_on_hand_cop float,
 	debt_owed_by_committee float,
-	coverage_end_date date,
 	individual_itemized_contribution float,
 	individual_unitemized_contribution float,
 	individual_contribution float,
@@ -83,8 +82,7 @@ CREATE TABLE candidate_finance (
 	net_contribution float,
 	net_operating_expenditure float,
 	cash_on_hand_bop float,
-	debt_owe_to_committee float,
-	coverage_start_date date
+	debt_owe_to_committee float
 );
 
 
