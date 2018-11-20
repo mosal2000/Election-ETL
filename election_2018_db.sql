@@ -94,3 +94,15 @@ CREATE TABLE congressional_district_unemployment (
 	unemployment_rate FLOAT
 );
 
+
+# DROP TABLE congressional_district_employment;
+
+CREATE TABLE congressional_district_employment (
+	id INT primary key NOT NULL AUTO_INCREMENT,
+	state_dist VARCHAR(10), 
+    state char(2),
+    district char(2),
+	employment INT, 
+	annual_payroll_in_1000 INT,
+	num_of_establishment INT 
+);
