@@ -90,6 +90,7 @@ CREATE TABLE congressional_district_unemployment (
 	id INT primary key NOT NULL AUTO_INCREMENT,
 	state_dist VARCHAR(20), 
 	district_population INT,
+	employed INT,
 	unemployed INT, 
 	unemployment_rate FLOAT
 );
