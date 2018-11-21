@@ -86,7 +86,7 @@ CREATE TABLE candidate_finance (
 );
 
 
-CREATE TABLE congressional_district_unemployment (
+CREATE TABLE congressional_district_mcd (
 	id INT primary key NOT NULL AUTO_INCREMENT,
 	state_dist VARCHAR(20), 
 	district_population INT,
@@ -96,9 +96,9 @@ CREATE TABLE congressional_district_unemployment (
 );
 
 
-# DROP TABLE congressional_district_employment;
+# DROP TABLE congressional_district_cbp;
 
-CREATE TABLE congressional_district_employment (
+CREATE TABLE congressional_district_cbp (
 	id INT primary key NOT NULL AUTO_INCREMENT,
 	state_dist VARCHAR(10), 
     state char(2),
