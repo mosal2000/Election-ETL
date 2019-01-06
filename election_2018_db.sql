@@ -107,3 +107,17 @@ CREATE TABLE congressional_district_cbp (
 	annual_payroll_in_1000 INT,
 	num_of_establishment INT 
 );
+
+#DROP TABLE us_congress_list;
+
+CREATE TABLE us_congress_list (
+	id INT primary key NOT NULL AUTO_INCREMENT,
+	congress_num INT,
+	election_year INT,
+    state varchar(50),
+    abbrev char(2),
+    district char(2),
+	name varchar(100), 
+	party varchar(30),
+	fec_candidate_id VARCHAR(20)
+);
