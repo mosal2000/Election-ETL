@@ -115,7 +115,7 @@ CREATE TABLE us_congress_list (
 	congress_num INT,
 	election_year INT,
     state varchar(50),
-    abbrev char(2),
+    st_abbrev char(2),
     district char(2),
 	name varchar(100), 
 	party varchar(30),
